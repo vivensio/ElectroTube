@@ -1,0 +1,12 @@
+{
+  "name": "electroplayer",
+  "version": "0.1.1",
+  "description": "Play Youtube videos on a little window. Stays on top of the screen",
+  "main": "index.js",
+  "author": "Vivek Patel (vivensio)",
+  "license": "ISC",
+  "dependencies": {
+    "video.js": "^5.12.6",
+    "videojs-youtube": "^2.1.1"
+  }
+}
