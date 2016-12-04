@@ -1,7 +1,5 @@
 const electron = require('electron');
 const app = electron.app;
-const Menu = electron.Menu;
-const Tray = electron.Tray;
 const BrowserWindow = electron.BrowserWindow;
 const ipcMain = electron.ipcMain;
 
@@ -26,7 +24,6 @@ app.on('ready', () => {
 
   win.loadURL('file://' + __dirname + '/index.html');
   win.show();
-  // win.openDevTools();
 
   ipcMain.on('asynchronous-message', function (event, arg) {
     if (arg == "shutdown")
