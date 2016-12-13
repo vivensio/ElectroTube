@@ -22,7 +22,7 @@ app.on('ready', () => {
     alwaysOnTop: true
   });
 
-  win.loadURL('file://' + __dirname + '/index.html');
+  win.loadURL('file://' + __dirname + '/electrotube.html');
   win.show();
 
   ipcMain.on('asynchronous-message', function (event, arg) {
