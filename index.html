@@ -49,14 +49,20 @@
         height: 0;
         border-style: solid;
         border-width: 0 200px 150px 0;
-        border-color: transparent #000000 transparent transparent;
+        border-color: transparent #333 transparent transparent;
         line-height: 0px;
-        _border-color: #000000 #000000 #000000 #000000;
-        _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+        _border-color: #333 #333 #333 #333;
+        _filter: progid:DXImageTransform.Microsoft.Chroma(color='#333');
         position: absolute;
         top: 0;
         right: 0;
         z-index: -1;
+        cursor: default;
+        pointer-events: none;
+        transition: all 200ms linear;
+    }
+    .github-link:hover:before {
+        border-color: transparent #4078C0 transparent transparent;
     }
     .first div {
       list-style: none;
